@@ -241,6 +241,7 @@ void studentEntryMenu() {
     case '1':
         writeStudent();
         clearScreen();
+        studentEntryMenu();
         break;
     case '2':
         cout<<"\n\n\tPlease Enter the roll number ";
