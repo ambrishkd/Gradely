@@ -75,7 +75,7 @@ void Student::getData() {
 
 void Student::showData() {
     clearScreen();
-    cout<<"\t------------------------";
+    cout<<"\n\t------------------------";
     cout<<"\n\tStudent Detail | Gradely\n";
     cout<<"\t------------------------";
     cout<<"\n\n\tRoll No: "<<rollno;
@@ -244,9 +244,10 @@ void studentEntryMenu() {
         studentEntryMenu();
         break;
     case '2':
-        cout<<"\n\n\tPlease Enter the roll number ";
+        cout<<"\n\tEnter the Roll number of Student: ";
         cin>>num;
         displayStudent(num);
+        studentEntryMenu();
         break;
     case '3':
         cout<<"\n\n\tPlease Enter the roll number ";
